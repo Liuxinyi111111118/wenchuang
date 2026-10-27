@@ -1,27 +1,27 @@
 /* --- CSS 变量 --- */
 :root {
-    --primary: #1a3a5c;        /* 法政蓝 */
-    --primary-light: #2a4a6a;
-    --primary-dark: #0d2540;
-    --accent: #c9a96a;         /* 赣鎏金 */
+    --primary: #6e2019;        /* 星火赭（深红） */
+    --primary-light: #8f352b;
+    --primary-dark: #40100b;
+    --accent: #c9a96a;         /* 贡水金 */
     --accent-light: #f0d58a;
     --accent-dark: #a88b4a;
-    --red: #8b1a1a;            /* 井冈红 */
+    --red: #8b1a1a;            /* 长征红 */
     --red-light: #c0202a;
     --red-dark: #5c0f0f;
     --red-bg: rgba(139, 26, 26, 0.06);
     --bg: #faf8f3;
     --bg-secondary: #f5f2ea;
-    --bg-dark: #0d2540;
-    --text: #1a2a3a;
-    --text-secondary: #5a6a7a;
-    --text-light: #8a9aaa;
+    --bg-dark: #40100b;
+    --text: #2a1d1a;
+    --text-secondary: #6a5a52;
+    --text-light: #9a8a80;
     --border: #e8e4db;
     --border-light: #f0ece3;
     --white: #ffffff;
-    --shadow-sm: 0 2px 8px rgba(26, 58, 92, 0.06);
-    --shadow-md: 0 4px 20px rgba(26, 58, 92, 0.08);
-    --shadow-lg: 0 8px 40px rgba(26, 58, 92, 0.15);
+    --shadow-sm: 0 2px 8px rgba(110, 32, 25, 0.06);
+    --shadow-md: 0 4px 20px rgba(110, 32, 25, 0.08);
+    --shadow-lg: 0 8px 40px rgba(110, 32, 25, 0.15);
     --shadow-red: 0 4px 20px rgba(139, 26, 26, 0.18);
     --shadow-gold: 0 6px 28px rgba(201, 169, 106, 0.25);
     --radius-sm: 6px;
@@ -163,7 +163,7 @@ body {
    Section 1: 封面主视觉
    ======================================== */
 .section-hero {
-    background: linear-gradient(160deg, var(--red-dark) 0%, var(--red) 45%, var(--primary) 100%);
+    background: linear-gradient(160deg, var(--red-dark) 0%, var(--red) 45%, #2e0d08 100%);
     display: flex; align-items: center; padding-top: 120px; overflow: hidden;
     position: relative;
 }
@@ -610,10 +610,10 @@ body {
     margin-bottom: 14px;
     font-weight: 500;
 }
-.tag-env { background: rgba(76, 175, 80, 0.14); color: #2e7d32; }
-.tag-country { background: rgba(255, 152, 0, 0.14); color: #ef6c00; }
-.tag-gov { background: rgba(33, 150, 243, 0.14); color: #1565c0; }
-.tag-youth { background: rgba(156, 39, 176, 0.14); color: #6a1b9a; }
+.tag-env { background: rgba(139, 26, 26, 0.14); color: #8b1a1a; }
+.tag-country { background: rgba(201, 169, 106, 0.22); color: #a88b4a; }
+.tag-gov { background: rgba(110, 32, 25, 0.12); color: #6e2019; }
+.tag-youth { background: rgba(255, 152, 0, 0.14); color: #ef6c00; }
 .case-card h4 {
     font-size: 18px;
     color: var(--primary);

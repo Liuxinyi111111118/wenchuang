@@ -3,28 +3,28 @@
 (function () {
     'use strict';
 
-    // ---------------- 题库：3道江西法治主题闯关题 ----------------
+    // ---------------- 题库：3道长征主题闯关题 ----------------
     const QUIZ_DATA = [
         {
-            tag: '红色法治',
-            question: '1931年中华苏维埃共和国在江西哪里成立，并颁布了中国共产党领导下第一部红色宪法性文件？',
-            options: ['A. 井冈山', 'B. 瑞金', 'C. 南昌', 'D. 兴国'],
+            tag: '长征出发',
+            question: '1934年10月，中央红军主力8.6万余人从哪里渡河，开始了二万五千里长征？',
+            options: ['A. 瑞金绵江河', 'B. 于都河（贡水）', 'C. 井冈山茨坪', 'D. 南昌赣江'],
             answer: 'B',
-            explain: '正确答案：B. 瑞金。1931年11月7日，中华苏维埃第一次全国代表大会在江西瑞金召开，宣告中华苏维埃共和国成立，通过《中华苏维埃共和国宪法大纲》，这是中国共产党领导下第一部红色宪法性文件。'
+            explain: '正确答案：B. 于都河（贡水）。1934年10月17日至20日，中央红军主力从于都县城东门等八个渡口夜渡于都河（贡水），踏上长征路，于都因此被誉为"长征第一渡"。'
         },
         {
-            tag: '赣鄱法治渊源',
-            question: '以下哪位江西籍历史人物主持了著名的"熙宁变法"，并提出"天变不足畏，祖宗不足法，人言不足恤"的法治革新精神？',
-            options: ['A. 婺源朱熹', 'B. 修水陈宝箴', 'C. 临川王安石', 'D. 吉安欧阳修'],
-            answer: 'C',
-            explain: '正确答案：C. 临川王安石。北宋抚州临川（今江西抚州）人王安石主持熙宁变法，以"三不足"精神推行青苗法、保甲法等新法，其法治革新精神彪炳史册，被列宁誉为"中国十一世纪的改革家"。'
-        },
-        {
-            tag: '新时代法治',
-            question: '江西省首创培养农村基层法治骨干的工程名称是？',
-            options: ['A. 法律明白人工程', 'B. 赣鄱法学工程', 'C. 法治村官工程', 'D. 井冈普法工程'],
+            tag: '于都史料',
+            question: '红军夜渡于都河时，于都人民捐献了哪些家中物资帮助搭建浮桥？',
+            options: ['A. 门板、床板乃至寿材', 'B. 粮食和马匹', 'C. 银元和布匹', 'D. 渔船和渔网'],
             answer: 'A',
-            explain: '正确答案：A. 法律明白人工程。江西省在全国率先实施农村"法律明白人"培养工程，截至2025年已培养35万余名法律明白人，实现行政村全覆盖，是江西法治建设的靓丽名片，入选全国基层法治宣传典型经验。'
+            explain: '正确答案：A. 门板、床板乃至寿材。为架设浮桥，于都百姓拆下自家门板、床板，一位老大爷甚至捐出为自己准备的寿材。30万于都人民共同保守了红军大转移的秘密，周恩来由衷赞叹："于都人民真好，苏区人民真亲。"'
+        },
+        {
+            tag: '万里征程',
+            question: '标志着红军长征胜利结束的事件是？',
+            options: ['A. 遵义会议召开', 'B. 飞夺泸定桥', 'C. 翻越夹金山', 'D. 1936年10月三大主力会宁会师'],
+            answer: 'D',
+            explain: '正确答案：D. 1936年10月三大主力会宁会师。1936年10月，红一、二、四方面军在甘肃会宁胜利会师，宣告历时两年的红军长征胜利结束。长征纵横十余省，四路红军总行程约六万五千里。'
         }
     ];
 
@@ -33,7 +33,7 @@
         quizIndex: 0,
         quizScore: 0,
         quizAnswered: false,
-        signCount: 1286,
+        signCount: 1936,
         dashboardAnimated: false
     };
 
@@ -251,18 +251,18 @@
             if (percent === 1) {
                 title = '完美通关！';
                 badge = '🏆';
-                name = '法治赣鄱金牌使者';
-                desc = '你以满分成绩完成闯关！你对江西法治文化、红色法治基因和新时代法治实践了如指掌，当之无愧的法治赣鄱金牌宣传员！';
+                name = '长征精神金牌传承人';
+                desc = '你以满分成绩完成闯关！你对长征出发历史、于都渡河史料和万里征程了如指掌，当之无愧的长征精神金牌传承人！';
             } else if (percent >= 0.66) {
                 title = '恭喜通关！';
                 badge = '🎖';
-                name = '法治赣鄱使者';
-                desc = '你已圆满完成法治知识闯关，彰显了新时代江西青年的法治素养！继续努力，让法治之光照亮赣鄱大地！';
+                name = '长征精神传承人';
+                desc = '你已圆满完成长征知识闯关，彰显了新时代青年的红色素养！继续努力，让长征精神照亮新时代的长征路！';
             } else {
                 title = '闯关完成！';
                 badge = '💪';
-                name = '法治赣鄱学习使者';
-                desc = '感谢你的参与！通过这次闯关，相信你对江西法治文化有了更多了解。再闯一次，让法治知识更加入脑入心！';
+                name = '长征精神学习使者';
+                desc = '感谢你的参与！通过这次闯关，相信你对红军长征出发的故事有了更多了解。再闯一次，让长征精神更加入脑入心！';
             }
             $('resultTitle').textContent = title;
             $('resultBadge').textContent = badge;
@@ -350,7 +350,7 @@
             btnSign.textContent = '承诺成功 ✓';
             btnSign.style.background = 'linear-gradient(135deg, #2e7d32, #1b5e20)';
             setTimeout(() => {
-                btnSign.textContent = '我承诺 ⚖';
+                btnSign.textContent = '我承诺 🚩';
                 btnSign.style.background = '';
             }, 1600);
         }
@@ -415,13 +415,13 @@
     function initConsoleBranding() {
         try {
             const main = [
-                '%c ⚖ 法治赣鄱行 %c 沉浸式法治宣传数字文创H5作品 ',
+                '%c 🚩 长征从这里出发 %c 沉浸式红军长征历史数字文创H5作品 ',
                 'background:linear-gradient(90deg,#8b1a1a,#c9a96a);color:#fff;padding:6px 14px;font-weight:bold;border-radius:4px 0 0 4px;font-size:13px;',
-                'background:#1a3a5c;color:#c9a96a;padding:6px 14px;font-weight:bold;border-radius:0 4px 4px 0;font-size:13px;'
+                'background:#6e2019;color:#c9a96a;padding:6px 14px;font-weight:bold;border-radius:0 4px 4px 0;font-size:13px;'
             ];
             console.log(...main);
             console.log('%c2026 江西省高校暑期大思政实践活动 · 数字文创参赛作品', 'color:#5a6a7a;font-size:11px;');
-            console.log('%c作品主题：牢记嘱托强国有我 · 行走赣鄱感恩奋进', 'color:#8b1a1a;font-size:11px;');
+            console.log('%c长征第一渡 · 江西于都 | 每一代人有每一代人的长征路', 'color:#8b1a1a;font-size:11px;');
         } catch (e) { /* ignore */ }
     }
 
